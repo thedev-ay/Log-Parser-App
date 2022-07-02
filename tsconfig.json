@@ -9,8 +9,7 @@
       "noUnusedParameters": true,
       "outDir": "lib",
       "sourceMap": false,
-      "target": "esnext",
       "stripInternal": true
       },
-      "exclude": ["node_modules", "test/**/*.ts"]
+      "exclude": ["node_modules"]
 }

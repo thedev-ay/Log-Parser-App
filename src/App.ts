@@ -7,7 +7,7 @@ export class App {
             const cli = new CLI();
             const logService = new LogService();
 
-            const filter = "warn";
+            const filter = "error";
 
             const args = cli.run();
 
@@ -19,7 +19,7 @@ export class App {
 
             logService.export(filteredLogs, args.output)
         } catch (err) {
-            console.error(err.message)
+            console.error(`Error: ${err.message}`)
         }
     }
 }

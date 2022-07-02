@@ -11,6 +11,7 @@ $ npm run build
 
 ## Testing
 ```bash
-$ npm run start or
-$ node lib/index.js --input \"logs/app.log\" --output \"errors.json\"
+$ npm run start
+or
+$ node parser.js --input logs/app.log --output errors.json
 ```

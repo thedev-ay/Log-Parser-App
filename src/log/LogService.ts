@@ -45,7 +45,7 @@ export class LogService {
 
     public export(logs: ITransformedLog[], outputPath: string) {
         try {
-        fs.writeFileSync(path.join(process.cwd(), outputPath), JSON.stringify(logs));
+            fs.writeFileSync(path.join(process.cwd(), outputPath), JSON.stringify(logs));
         } catch (err) {
             throw new Error("Cannot save output on the provided path!")
         }
